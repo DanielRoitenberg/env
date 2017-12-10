@@ -178,6 +178,8 @@ inoremap <leader>w <Esc>:w<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nmap <leader>j <c-p>
+let g:ctrlp_custom_ignore = { 'dir':  '\.git$\|\.hg$\|\.svn$', 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\'}
+let g:ctrlp_max_files=0
 
 " Key mappings " {{{
 nnoremap <silent> <Leader>rs :source ~/.vimrc<CR>
